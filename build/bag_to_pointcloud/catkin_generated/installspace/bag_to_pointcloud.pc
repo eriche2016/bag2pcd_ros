@@ -1,0 +1,8 @@
+prefix=/media/ps/data/Livox_data/hf_indoor_data/v1.0_raw_bag/rosbag-to-pointcloud/install
+
+Name: bag_to_pointcloud
+Description: Description of bag_to_pointcloud
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

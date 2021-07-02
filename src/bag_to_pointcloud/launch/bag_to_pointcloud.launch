@@ -1,0 +1,13 @@
+<launch>
+    <arg name="input_topic" default="/livox/lidar_0TFDHAA006SW451"/>
+    <arg name="point_type" default="XYZI"/>
+    <arg name="save_type" default="pcd"/>
+    <arg name="save_dir" default="/media/ps/data/Livox_data/hf_indoor_data/v1.0_raw_bag/data"/>
+
+    <node pkg="bag_to_pointcloud" name="bag_to_pointcloud" type="bag_to_pointcloud" output="screen">
+        <param name="input_topic" type="string" value="$(arg input_topic)"/>
+        <param name="point_type" type="string" value="$(arg point_type)"/>
+        <param name="save_dir" type="string" value="$(arg save_dir)"/>
+        <param name="save_type" type="string" value="$(arg save_type)"/>
+    </node>
+</launch>

@@ -1,0 +1,2 @@
+bag_to_pointcloud
+-DCATKIN_DEVEL_PREFIX=/media/ps/data/Livox_data/hf_indoor_data/v1.0_raw_bag/rosbag-to-pointcloud/devel -DCMAKE_INSTALL_PREFIX=/media/ps/data/Livox_data/hf_indoor_data/v1.0_raw_bag/rosbag-to-pointcloud/install -G Unix Makefiles
