@@ -1,6 +1,6 @@
 # <center> Rosbag点云文件生成工具 </center> #
 
-original repo. from PySonger is [here](https://github.com/PySonger/rosbag-to-pointcloud.git)
+original repo. from PySonger can be found [here](https://github.com/PySonger/rosbag-to-pointcloud.git)
 
 ## 1. 工具简介 ##
 这是一个用于将 **rosbag** 文件中特定点云消息转成 ***.pcd或者.txt*** 存储格式的点云数据的小工具，目前只支持格式为 ***pcl::PointXYZI 和 pcl::PointXYZRGB*** 的点云。
@@ -61,7 +61,9 @@ rosbag play ROSBAG_FILE
 
 ## Q &A ##
 
-why this tool: rosbag里面包含多个点云话题，bag_to_pcd失效（无法指定话题）
+**Q: why this tool?**
+
+**A:** rosbag里面包含多个点云话题，bag_to_pcd失效（无法指定话题）
 命令：
 ```
   rosrun pcl_ros bag_to_pcd my_data.bag /livox/A data/
