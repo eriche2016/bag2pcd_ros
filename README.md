@@ -62,3 +62,13 @@ roscore && rosbag play ROSBAG_FILE
 1. 目前工具只支持 **pcl::PointXYZI、pcl::PointXYZRGB** 格式的点云数据；
 2. 生成的点云存储文件会从 **1.txt/1.pcd** 依次升序存储;
 3. 上述的 **save_dir** 一定要事先存在，填写时必须为绝对路径；
+
+## Q &A ##
+
+why this tool: rosbag里面包含多个点云话题，bag_to_pcd失效（无法指定话题）
+命令：
+```
+  rosrun pcl_ros bag_to_pcd my_data.bag /livox/A data/
+```
+主要原因是bag_to_pcd会将所有bag中pointcloud2格式的点云切割出来，而不管指定话题是哪一个。
+错误信息在[这里](https://github.com/ros-perception/perception_pcl/pull/215)。
