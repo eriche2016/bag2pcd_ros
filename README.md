@@ -26,7 +26,7 @@ bash run.sh
 
 - 播放发送点云数据的 **rosbag** 文件；
 ```bash
-roscore && rosbag play ROSBAG_FILE
+rosbag play ROSBAG_FILE
 ```
 - **rosbag** 播放完毕，键入 **ctrl + C** 关闭生成节点；
 
