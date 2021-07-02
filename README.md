@@ -1,5 +1,11 @@
 # <center> Rosbag点云文件生成工具 </center> #
 
+original repo.: 
+
+```
+git clone https://github.com/PySonger/rosbag-to-pointcloud.git
+```
+
 ## 1. 工具简介 ##
 这是一个用于将 **rosbag** 文件中特定点云消息转成 ***.pcd或者.txt*** 存储格式的点云数据的小工具，目前只支持格式为 ***pcl::PointXYZI 和 pcl::PointXYZRGB*** 的点云。
 ## 2. 工具依赖的环境与库 ##
@@ -10,7 +16,7 @@
 ## 3. 工具的下载与安装 ##
 - 从代码仓库下载源代码；
 ```bash
-git clone https://github.com/PySonger/rosbag-to-pointcloud.git
+git clone https://github.com/eriche2016/bag2pcd_ros.git
 ```
 - 进入源码目录，使用 catkin_make 编译源代码；
 ```bash
